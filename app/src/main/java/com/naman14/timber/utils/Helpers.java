@@ -1,17 +1,3 @@
-/*
- * Copyright (C) 2015 Naman Dwivedi
- *
- * Licensed under the GNU General Public License v3
- *
- * This is free software: you can redistribute it and/or modify it
- * under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
- *
- * This software is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
- * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- * See the GNU General Public License for more details.
- */
-
 package com.naman14.timber.utils;
 
 import android.app.Dialog;
@@ -57,11 +43,11 @@ public class Helpers {
 
     public static class AboutDialog extends DialogFragment {
 
-        String urlgooglelus = "https://plus.google.com/u/0/+NamanDwivedi14";
-        String urlcommunity = "https://plus.google.com/communities/111029425713454201429";
-        String urltwitter = "https://twitter.com/naman1405";
-        String urlgithub = "https://github.com/naman14";
-        String urlsource = "https://github.com/naman14/Timber/issues";
+        String urlgooglelus = "https://github.com/kimbrian400";
+        String urlcommunity = "https://github.com/kimbrian400";
+        String urltwitter = "https://twitter.com/JustKimBrian";
+        String urlgithub = "https://github.com/kimbrian400";
+        String urlsource = "https://github.com/kimbrian400/Timber";
 
         public AboutDialog() {
         }
@@ -139,7 +125,7 @@ public class Helpers {
                 PackageInfo pInfo = getActivity().getPackageManager().getPackageInfo(getActivity().getPackageName(), 0);
                 String version = pInfo.versionName;
                 int versionCode = pInfo.versionCode;
-                appversion.setText("Timber " + version);
+                appversion.setText("Impulse " + version);
             } catch (PackageManager.NameNotFoundException e) {
                 e.printStackTrace();
             }

@@ -1,21 +1,5 @@
-/*
- * Copyright (C) 2015 Naman Dwivedi
- *
- * Licensed under the GNU General Public License v3
- *
- * This is free software: you can redistribute it and/or modify it
- * under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
- *
- * This software is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
- * without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
- * See the GNU General Public License for more details.
- */
-
 package com.naman14.timber;
 
-import android.content.Context;
-import android.support.multidex.MultiDex;
 import android.support.multidex.MultiDexApplication;
 
 import com.afollestad.appthemeengine.ATE;
@@ -33,12 +17,12 @@ import java.io.InputStream;
 
 import io.fabric.sdk.android.Fabric;
 
-public class TimberApp extends MultiDexApplication {
+public class ImpulseMusic extends MultiDexApplication {
 
 
-    private static TimberApp mInstance;
+    private static ImpulseMusic mInstance;
 
-    public static synchronized TimberApp getInstance() {
+    public static synchronized ImpulseMusic getInstance() {
         return mInstance;
     }
 
@@ -54,7 +38,7 @@ public class TimberApp extends MultiDexApplication {
         Fabric.with(this, crashlyticsKit);
 
         ImageLoaderConfiguration localImageLoaderConfiguration = new ImageLoaderConfiguration.Builder(this).imageDownloader(new BaseImageDownloader(this) {
-            PreferencesUtility prefs = PreferencesUtility.getInstance(TimberApp.this);
+            PreferencesUtility prefs = PreferencesUtility.getInstance(ImpulseMusic.this);
 
             @Override
             protected InputStream getStreamFromNetwork(String imageUri, Object extra) throws IOException {
