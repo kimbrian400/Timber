@@ -9,9 +9,6 @@ import android.view.View;
 
 import java.util.Random;
 
-/**
- * a music visualizer sort of animation (with random data)
- */
 public class MusicVisualizer extends View {
 
     Random random = new Random();
